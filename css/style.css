@@ -1,12 +1,16 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Mooli&display=swap"); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&family=Roboto+Slab:wght@500;600;700&display=swap");
 
 /********** Template CSS **********/
 :root {
-  --primary: hsl(209, 74%, 57%);
-  --secondary: rgb(7, 64, 102);
+  /* --primary: hsl(209, 74%, 57%); */
+  --primary: #42a1c7;
+  --secondary: #0e2954;
   /* --secondary: rgb(66, 6, 6); */
   --light: #f0f6ff;
   --dark: #262b47;
+  --navy: #0e2954;
+  --blue: #1f6e8c;
 }
 
 /*** Spinner ***/
@@ -22,6 +26,15 @@
   visibility: visible;
   opacity: 1;
 }
+
+.spin {
+  border-width: 0.65rem;
+  border-color: var(--dark) var(--dark) transparent;
+}
+
+/* .spin::after {
+  border-color: var(--blue) transparent transparent;
+} */
 
 /*** Heading ***/
 h1,
@@ -64,24 +77,23 @@ h6,
 }
 
 .bg-primary-gradient {
-  background: linear-gradient(
-    to bottom right,
-    var(--primary),
-    var(--secondary)
-  );
+  background: linear-gradient(to bottom right, var(--light), var(--primary));
 }
 
 .bg-secondary-gradient {
-  background: linear-gradient(
-    to bottom right,
-    var(--secondary),
-    var(--primary)
-  );
+  background: linear-gradient(to bottom right, var(--blue), var(--light));
 }
 
 /*** Button ***/
 .head-btn {
   font-size: 0.959rem;
+  background-color: var(--light);
+  color: var(--dark);
+  font-weight: 600;
+}
+.head-btn:hover {
+  background-color: transparent;
+  color: var(--light);
 }
 
 .btn {
@@ -166,19 +178,22 @@ h6,
   bottom: 45px;
   z-index: 99;
   border: none;
-  background: linear-gradient(
+  background: linear-gradient(to bottom right, var(--primary), var(--navy));
+}
+.back-to-top:hover {
+  background-color: linear-gradient(
     to bottom right,
-    var(--primary),
-    var(--secondary)
+    var(--navy),
+    var(--primary)
   );
 }
 
 /*** Navbar ***/
 .navbar-light .navbar-nav .nav-link {
   position: relative;
-  margin-right: 25px;
+  margin-right: 50px;
   padding: 45px 0;
-  font-family: "Jost", sans-serif;
+  font-family: "Roboto Slab", serif;
   font-size: 19px;
   font-weight: 500;
   color: var(--light) !important;
@@ -211,10 +226,12 @@ h6,
 
 .navbar-light .navbar-brand h1 {
   color: #ffffff;
+  /* letter-spacing: -1.5rem;
+  font-size: 3.5rem; */
 }
 
 .navbar-light .navbar-brand img {
-  max-height: 60px;
+  max-height: 100px;
   transition: 0.5s;
 }
 
@@ -293,25 +310,39 @@ h6,
   }
 }
 
-/* .name {
-  -webkit-text-fill-color: transparent;
-  -webkit-text-stroke: white 1px;
-} */
-
 /*** Hero Header ***/
+.name {
+  font-family: "Roboto Slab", serif;
+}
+
+.circle,
+.triangle {
+  position: absolute;
+}
+.circle {
+  left: 10%;
+  top: 30%;
+}
+.triangle {
+  right: 15%;
+  top: 25%;
+}
+
 .hero-header {
+  height: 80vh;
   margin-bottom: 6rem;
-  padding: 16rem 0 0 0;
-  background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
-    url(../img/bg-bottom.png),
-    linear-gradient(to bottom right, var(--primary), var(--secondary));
+  /* padding: 16rem 0 0 0; */
+  padding: 30vh 0 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+    url(../img/workspace.jpg);
   background-position: left 0px top 0px, right 0px top 50%, center bottom;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 991.98px) {
   .hero-header {
-    padding: 6rem 0 9rem 0;
+    /* padding: 6rem 0 9rem 0; */
   }
 }
 
@@ -479,9 +510,10 @@ h6,
 .footer {
   margin-top: 6rem;
   padding-top: 9rem;
-  background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
-    linear-gradient(to bottom right, var(--primary), var(--secondary));
-  background-position: left 0px bottom 0px, right 0px top 50%, center top;
+  background-color: black;
+  /* background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
+    linear-gradient(to bottom right, var(--blue), var(--navy));
+  background-position: left 0px bottom 0px, right 0px top 50%, center top; */
   background-repeat: no-repeat;
 }
 

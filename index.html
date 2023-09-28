@@ -7,16 +7,8 @@
     <meta content="" name="keywords" />
     <meta content="" name="description" />
 
-    <!-- Favicon
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" /> -->
-
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500&family=Jost:wght@500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
 
     <!-- Icon Font Stylesheet -->
     <link
@@ -37,9 +29,6 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet" />
-
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon" />
   </head>
 
   <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="51">
@@ -50,11 +39,11 @@
         class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
       >
         <div
-          class="spinner-grow text-primary"
-          style="width: 3rem; height: 3rem"
+          class="spinner-border text-primary spin"
+          style="width: 3.5rem; height: 3.5rem"
           role="status"
         >
-          <span class="sr-only">Loading...</span>
+          <span class="visually-hidden">Loading...</span>
         </div>
       </div>
       <!-- Spinner End -->
@@ -66,7 +55,7 @@
         >
           <a href="" class="navbar-brand p-0">
             <h1 class="m-0">A.A</h1>
-            <!-- <img src="img/logo.png" alt="Logo"> -->
+            <!-- <img src="img/1.png" alt="Logo" /> -->
           </a>
           <button
             class="navbar-toggler"
@@ -80,7 +69,6 @@
             <div class="navbar-nav mx-auto py-0">
               <a href="#" class="nav-item nav-link active">Home</a>
               <a href="./about.html" class="nav-item nav-link">About</a>
-
               <a href="./portfolio.html" class="nav-item nav-link">Portfolio</a>
             </div>
             <a
@@ -93,13 +81,19 @@
 
         <div class="container-xxl bg-primary hero-header">
           <div class="container px-lg-5">
-            <div class="row g-5">
-              <div class="col-lg-8 text-center text-lg-start">
+            <img src="./img/bg-circle.png" class="circle img-fluid" alt="" />
+            <img
+              src="./img/bg-triangle.png"
+              class="triangle img-fluid"
+              alt=""
+            />
+            <div class="row">
+              <div class="col-lg-8 text-center mx-auto">
                 <h1 class="text-white mb-4 animated slideInDown name">
-                  Hi, My name is Ayomikun
+                  Ayomikun Adeosun
                 </h1>
                 <p class="text-white pb-3 animated slideInDown mb-3">
-                  I am a Front-End Website Developer.
+                  Front-End Developer.
                 </p>
                 <a
                   href="about.html"
@@ -112,18 +106,6 @@
                   >Contact Me</a
                 >
               </div>
-              <div
-                class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
-                data-wow-delay="0.3s"
-              >
-                <div class="owl-carousel screenshot-carousel">
-                  <img class="img-fluid" src="img/travel-log.jpg" alt="" />
-                  <img class="img-fluid" src="img/signup-form.jpg" alt="" />
-                  <img class="img-fluid" src="img/profilecard.jpg" alt="" />
-                  <!-- <img class="img-fluid" src="img/screenshot-4.png" alt="" />
-                  <img class="img-fluid" src="img/screenshot-5.png" alt="" /> -->
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -134,7 +116,10 @@
       <div class="container-xxl py-5">
         <div class="container py-5 px-lg-5">
           <div class="row g-5 align-items-center">
-            <div class="col-lg-8 wow fadeInUp" data-wow-delay="0.1s">
+            <div
+              class="col-lg-8 wow fadeInUp text-sm-start text-center"
+              data-wow-delay="0.1s"
+            >
               <h5 class="text-primary-gradient fw-medium">Food for Thought</h5>
 
               <h1 class="mb-4">Insightful Quotes</h1>
@@ -165,6 +150,18 @@
                 >Read More</a
               >
             </div>
+            <div
+              class="col-lg-4 d-flex justify-content-center justify-content-lg-end wow fadeInUp"
+              data-wow-delay="0.3s"
+            >
+              <div class="owl-carousel screenshot-carousel">
+                <img class="img-fluid" src="img/Quote 1.png" alt="" />
+                <img class="img-fluid" src="img/Quote 2.png" alt="" />
+                <img class="img-fluid" src="img/Quote 3.png" alt="" />
+                <img class="img-fluid" src="img/Quote 4.png" alt="" />
+                <!-- <img class="img-fluid" src="img/screenshot-5.png" alt="" /> -->
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -172,14 +169,14 @@
 
       <!-- Footer Start -->
       <div
-        class="container-fluid bg-primary text-light footer wow fadeIn"
+        class="container-fluid text-light footer wow fadeIn"
         data-wow-delay="0.1s"
       >
-        <div class="container py-5 px-lg-5">
+        <div class="container pb-5 px-lg-5">
           <div class="row g-5">
-            <div class="col-md-12 col-lg-12">
+            <div class="col-md-12 col-lg-12 text-sm-start text-center">
               <h4 class="text-white mb-4">Address</h4>
-              <div class="d-flex gap-4">
+              <div class="d-flex flex-wrap gap-4">
                 <p>
                   <i class="fa fa-map-marker-alt me-3"></i>
                   Port Harcourt, Nigeria
@@ -215,7 +212,7 @@
               <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
                 &copy;
                 <a class="border-bottom" href="#"
-                  >HerTechTrail Cohort 7 project.</a
+                  >HerTechTrail Cohort 7 Project.</a
                 >
 
                 <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
