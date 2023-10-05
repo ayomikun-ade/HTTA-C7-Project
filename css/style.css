@@ -380,6 +380,14 @@ h6,
 }
 
 /*** Pricing ***/
+
+.cert {
+  background: linear-gradient(to left, var(--blue), var(--secondary));
+}
+.cert h5 {
+  color: var(--light);
+}
+
 .pricing .nav {
   padding: 2px;
 }
