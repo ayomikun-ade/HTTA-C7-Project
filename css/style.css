@@ -86,7 +86,7 @@ h6,
 
 /*** Button ***/
 .head-btn {
-  font-size: 0.959rem;
+  font-size: 0.98rem;
   background-color: var(--light);
   color: var(--dark);
   font-weight: 600;
@@ -333,9 +333,19 @@ h6,
   margin-bottom: 6rem;
   /* padding: 16rem 0 0 0; */
   padding: 30vh 0 0 0;
-  background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)),
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url(../img/workspace.jpg);
-  background-position: left 0px top 0px, right 0px top 50%, center bottom;
+  /* background-position: left 0px top 0px, right 0px top 50%, center bottom; */
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.about-header {
+  height: 80vh;
+  margin-bottom: 6rem;
+  padding: 30vh 0 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/about.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -509,7 +519,7 @@ h6,
 /*** Footer ***/
 .footer {
   margin-top: 6rem;
-  padding-top: 9rem;
+  padding-top: 3rem;
   background-color: black;
   /* background: url(../img/bg-circle.png), url(../img/bg-triangle.png),
     linear-gradient(to bottom right, var(--blue), var(--navy));
