@@ -358,6 +358,16 @@ h6,
   background-size: cover;
 }
 
+.portfolio-header {
+  height: 80vh;
+  margin-bottom: 6rem;
+  padding: 30vh 0 0 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(../img/portfolio.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 @media (max-width: 500px) {
   .about-header {
     /* padding: 6rem 0 9rem 0; */
@@ -540,19 +550,20 @@ h6,
 
 .footer-btn {
   /* border: 2px solid white;
-  border-radius: 20px;
-  padding: 5px 10px; */
-  border: 2px solid var(--light);
-  border-radius: 20px;
+  border-radius: 20px; */
+  /* padding: 0 10px; */
+  border-bottom: 2px solid var(--light);
+  /* border-radius: 20px;
   padding: 5px 10px;
   background-color: var(--light);
-  color: black !important;
-  font-weight: 600 !important;
+  color: black !important; */
+  font-weight: 500 !important;
 }
 .footer-btn:hover {
   /* border: 2px solid var(--light);
   border-radius: 20px;
   padding: 5px 10px; */
+  border: none;
   background-color: transparent;
   color: var(--light) !important;
 }
