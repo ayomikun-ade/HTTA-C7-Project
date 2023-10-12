@@ -238,6 +238,21 @@ h6,
   max-height: 45px;
 }
 
+@media (max-width: 992px) {
+  .navbar-nav {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-light .navbar-nav .nav-link {
+    margin-right: 0;
+  }
+  .navbar-collapse {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 @media (max-width: 991.98px) {
   .sticky-top.navbar-light {
     position: relative;
@@ -376,16 +391,69 @@ h6,
     background-repeat: no-repeat;
     background-size: cover;
   }
+  .portfolio-header {
+    /* padding: 6rem 0 9rem 0; */
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+      url(../img/portfolio-sm.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 /*** Feature ***/
+
+.contain {
+  position: relative;
+  overflow: hidden;
+  transition: scale 0.4s ease-in;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  background: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: "Poppins";
+  text-align: center;
+}
+.content h4 {
+  color: white !important;
+}
+.content p {
+  color: white !important;
+  font-size: 0.8rem;
+}
+
+.contain:hover .overlay {
+  opacity: 1;
+}
+
+.links a {
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+
 .feature-item {
   transition: 0.5s;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
 .feature-item:hover {
   margin-top: -15px;
-  box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.08); */
 }
 
 /*** Pricing ***/
@@ -499,13 +567,13 @@ h6,
   transition: 0.5s;
 }
 
-.testimonial-carousel .owl-item.center .testimonial-item {
-  /* background: linear-gradient(
+/* .testimonial-carousel .owl-item.center .testimonial-item {
+  background: linear-gradient(
     to bottom right,
     var(--primary),
     var(--secondary)
-  ); */
-}
+  );
+} */
 
 .testimonial-carousel .owl-item.center .testimonial-item h5,
 .testimonial-carousel .owl-item.center .testimonial-item p {
